@@ -1,35 +1,12 @@
-# 🪴 Green Lab Core Web Vitals Experiment
-
-## 📝 Authors
-
-- [Alberto Isotti](https://github.com/albertoisotti)
-- [Eoan O'Dea](https://github.com/eoanodea)
-- Dario Di Mambro
-- Saman Khodadadi
-- [Hugo van Wezenbeek](https://github.com/hfvw)
-
 ## ✏️ Description
 
-The purpose of this project is to examine the relationship between Google's [Core Web Vitals metrics](https://web.dev/explore/learn-core-web-vitals) and energy consumption on a Google Pixel 6.
-
-An in-depth description of this experiment can be found in the [research paper](https://www.overleaf.com/read/snmthytxnrst#1030cc) written for this assignment for the Green Lab module at Vrije Universiteit Amsterdam.
-
-## 🏗️ Structure
-
-The code for this project is broken into 5 parts:
-
-- [data](data): The data that was collected during the experiment. It contains the Tranco top 1000 websites and a Python script that sorts through the websites, pings them and creates a list of the top 50.
-- [android-runner](batterymanager): A modified version of the [Android Runner](https://github.com/S2-group/android-runner/) system built by the S2 Group at Vrije Universitiet Amsterdam, which is used to run the experiment.
-- [proxy](proxy): A [mitmproxy](https://mitmproxy.org/) script that is used to inject JavaScript into each website that loads Core Web Vital metrics, and sends data back to our receiver.
-- [receiver](receiver): A Node JS server that receives the data from the proxy and stores it in a CSV file.
-- [analysis](analysis): An R studio project that is used to analyse the data and generate graphs.
-
-## ✅ Prerequisites
+The purpose of this project is to examine the relationship between Google's [Core Web Vitals metrics](https://web.dev/explore/learn-core-web-vitals) and energy consumption on Android devices.
 
 ### 📱 Hardware
 
 - [Raspberry Pi 3 Model B+ with 4GB of RAM](https://www.raspberrypi.com/products/raspberry-pi-3-model-b-plus/)
-- [Google Pixel 6](https://store.google.com/nl/product/pixel_6a?hl=nl)
+- [Google Pixel 6]
+- [Google Pixel 3]
 
 ### 🖥️ Software
 
